@@ -20,6 +20,23 @@ li {
     padding-right: 30px;
 }
 
+button {
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 50px;
+    ;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px black;
+}
+
 body {
     font-family: 'Martel', serif;
     margin: 0 auto;
@@ -88,18 +105,76 @@ header b {
 
 /* Main */
 
+.jobType {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 300px;
+}
+
+.jobType img {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    box-shadow: 0 6px 9px lightgrey;
+    height: 200px;
+    padding: 10px;
+    width: 300px;
+}
+
+.jobType img:hover {
+    box-shadow: 0 6px 9px gray;
+    height: 197px;
+    transform: rotate(-4deg);
+    width: 297px;
+}
+
+.res,
+.com,
+.spec {
+    margin-top: 75px;
+    padding: 10px;
+    padding-bottom: 75px;
+}
+
+.quote {
+    background-color: green;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.quote label {
+    color: white;
+    font-size: 1.2em;
+    margin-left: 30px;
+    padding-right: 30px;
+}
+
+.quote input {
+    border-radius: 4px;
+    font-size: 1.2em;
+    padding: 10px;
+    width: 400px;
+}
+
+.quote button {
+    margin-left: 30px;
+}
+
 
 /*///////////////////////////////////////////////////*/
 
 
 /* Footer */
 
-
-/*///////////////////////////////////////////////////*/
-
 footer {
+    background-image: url('images/bg.png');
+    background-repeat: repeat;
     text-align: center;
 }
+
+
+/*///////////////////////////////////////////////////*/
 
 
 /* Media Queries */
