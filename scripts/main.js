@@ -5,6 +5,10 @@ $(document).ready(function () {
 
     $('#menuButton').on('click', function () {
         $('#menu').slideToggle(1000);
+        $('#menu').css({
+            "background-color": "red",
+            "border": "2px solid black"
+        });
     });
 
     $('#resButton').on('click', function () {

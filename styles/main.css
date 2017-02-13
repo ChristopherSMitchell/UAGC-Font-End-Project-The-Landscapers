@@ -168,8 +168,6 @@ header b {
 /* Footer */
 
 footer {
-    background-image: url('images/bg.png');
-    background-repeat: repeat;
     text-align: center;
 }
 
@@ -179,7 +177,7 @@ footer {
 
 /* Media Queries */
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:960px) {
     nav .row ul {
         display: none;
     }
@@ -195,6 +193,34 @@ footer {
         font-size: 1.5em;
         padding-bottom: 10px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width:425px) {
+    header {
+        padding-bottom: 20px;
+    }
+    header h1 {
+        font-size: 1.5em;
+        margin-top: 30px;
+    }
+    .jobType {
+        display: inline;
+        text-align: center;
+    }
+    .quote label {
+        margin: 0;
+    }
+    .quote input {
+        width: 100%;
+    }
+    .quote button {
+        margin: 0;
+        margin-top: 10px;
+    }
+    footer ul li {
+        display: block;
+        padding: 10px 0;
     }
 }
 
