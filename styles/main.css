@@ -194,6 +194,13 @@ footer {
         padding-bottom: 10px;
         text-align: center;
     }
+    header {
+        margin-bottom: -200px;
+    }
+    header h1 {
+        font-size: 6.5em;
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width:768px) {
