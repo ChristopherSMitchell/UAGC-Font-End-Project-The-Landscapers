@@ -196,6 +196,24 @@ footer {
     }
 }
 
+@media screen and (max-width:768px) {
+    header {
+        padding-bottom: 20px;
+    }
+    header h1 {
+        font-size: 5em;
+        margin-top: 30px;
+    }
+    .jobType {
+        display: inline;
+        text-align: center;
+    }
+    .quote button {
+        margin-left: 385px;
+        margin-top: 20px;
+    }
+}
+
 @media screen and (max-width:425px) {
     header {
         padding-bottom: 20px;
