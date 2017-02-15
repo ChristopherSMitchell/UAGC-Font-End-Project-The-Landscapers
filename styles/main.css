@@ -6,18 +6,15 @@
 
 a {
     color: black;
+    display: inline-block;
+    font-size: 1.3em;
+    list-style-type: none;
+    padding-right: 15px;
     text-decoration: none;
 }
 
 a:hover {
     color: green;
-}
-
-li {
-    display: inline-block;
-    font-size: 1.1em;
-    list-style-type: none;
-    padding-right: 30px;
 }
 
 button {
@@ -27,7 +24,6 @@ button {
     color: white;
     font-size: 24px;
     padding: 10px 50px;
-    ;
 }
 
 button:hover {
@@ -37,10 +33,29 @@ button:hover {
     box-shadow: 1px 1px 3px black;
 }
 
-body {
-    font-family: 'Martel', serif;
-    margin: 0 auto;
-    max-width: 960px;
+
+/*///////////////////////////////////////////////////*/
+
+
+/* Fullscreen Background */
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
 }
 
 
@@ -50,21 +65,20 @@ body {
 /* Navigation */
 
 nav {
-    border-bottom: 1px dashed grey;
-    padding-bottom: 2px;
+    background-color: white;
+    border-bottom: 1px solid gray;
+    box-shadow: 1px 1px 10px gray;
+    height: 65px;
+    left: 0;
+    opacity: .8;
+    padding-top: 4px;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
 
-nav .row img {
-    margin-right: 45%;
-    width: 50px;
-}
-
-nav .row ul {
-    display: inline-block;
-    margin-top: 15px;
-}
-
-nav .row i {
+#menuButton {
     display: none;
 }
 
@@ -72,16 +86,7 @@ nav .row i {
 /*///////////////////////////////////////////////////*/
 
 
-/* Header */
-
-header video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: .5;
-    width: 100%;
-    z-index: -1;
-}
+/* header */
 
 header h1 {
     color: white;
@@ -105,42 +110,126 @@ header b {
 
 /* Main */
 
+main {
+    //background-color: white;
+    margin: 0 auto;
+    max-width: 960px;
+    //opacity: .8;
+}
+
 .jobType {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 300px;
 }
 
 .jobType img {
     background-color: white;
     border: 1px solid gray;
     border-radius: 3px;
-    box-shadow: 0 6px 9px lightgrey;
+    box-shadow: 0 6px 9px grey;
     height: 200px;
     padding: 10px;
     width: 300px;
 }
 
 .jobType img:hover {
-    box-shadow: 0 6px 9px gray;
+    box-shadow: 0 6px 9px black;
     height: 197px;
     transform: rotate(-4deg);
     width: 297px;
 }
 
-.res,
-.com,
-.spec {
-    margin-top: 75px;
-    padding: 10px;
-    padding-bottom: 75px;
+.people img {
+    width: 150px;
+}
+
+.contact form input,
+.contact form textarea {
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: green;
+    font-size: 2em;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+
+/*///////////////////////////////////////////////////*/
+
+
+/* Modal */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*///////////////////////////////////////////////////*/
+
+
+/* Footer */
+
+footer {
+    text-align: center;
 }
 
 .quote {
     background-color: green;
     border-radius: 2px;
     padding: 20px;
+    margin-top: 125px;
 }
 
 .quote label {
@@ -165,87 +254,65 @@ header b {
 /*///////////////////////////////////////////////////*/
 
 
-/* Footer */
+/* Media */
 
-footer {
-    text-align: center;
-}
-
-
-/*///////////////////////////////////////////////////*/
-
-
-/* Media Queries */
-
-@media screen and (max-width:960px) {
-    nav .row ul {
-        display: none;
-    }
-    nav .row i {
-        cursor: pointer;
+@media screen and (max-width:930px) {
+    .jobType {
         display: block;
-        margin-left: 90%;
-        margin-top: -40px;
-        padding-bottom: 10px;
-    }
-    nav .row li {
-        display: block;
-        font-size: 1.5em;
-        padding-bottom: 10px;
         text-align: center;
     }
-    header {
-        margin-bottom: -200px;
+}
+
+@media screen and (max-width:890px) {
+    .quote {
+        margin: 0;
+        margin-top: 75px;
     }
-    header h1 {
-        font-size: 6.5em;
-        margin-top: 40px;
+    .quote label,
+    .quote input,
+    .quote button {
+        display: block;
+        margin: 15px 0;
+        width: 100%;
     }
 }
 
 @media screen and (max-width:768px) {
-    header {
-        padding-bottom: 20px;
+    #menuButton {
+        display: block;
+        padding-top: 12px;
     }
-    header h1 {
-        font-size: 5em;
-        margin-top: 30px;
-    }
-    .jobType {
-        display: inline;
-        text-align: center;
-    }
-    .quote button {
-        margin-left: 385px;
-        margin-top: 20px;
+    #menu {
+        display: none;
     }
 }
 
-@media screen and (max-width:425px) {
-    header {
-        padding-bottom: 20px;
+@media (max-width: 767px) {
+    .fullscreen-bg {
+        background: url('images/Lawn%20Mower%20-%201039.mp4') center center / cover no-repeat;
     }
+    .fullscreen-bg__video {
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px) {
     header h1 {
-        font-size: 1.5em;
-        margin-top: 30px;
+        font-size: 3em;
     }
-    .jobType {
-        display: inline;
-        text-align: center;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        height: 300%;
+        top: -100%;
     }
-    .quote label {
-        margin: 0;
-    }
-    .quote input {
-        width: 100%;
-    }
-    .quote button {
-        margin: 0;
-        margin-top: 10px;
-    }
-    footer ul li {
-        display: block;
-        padding: 10px 0;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fullscreen-bg__video {
+        width: 300%;
+        left: -100%;
     }
 }
 

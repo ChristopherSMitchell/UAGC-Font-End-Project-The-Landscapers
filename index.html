@@ -7,7 +7,6 @@
 
     <title>The LandScapers</title>
 
-    <link rel="stylesheet" href="styles/framework.css">
     <link rel="stylesheet" href="styles/main.css">
     <script src="https://use.fontawesome.com/70005e22d8.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
@@ -17,36 +16,29 @@
 
 <body>
 
+    <div class="fullscreen-bg">
+        <video loop muted autoplay src="images/Lawn%20Mower%20-%201039.mp4" class="fullscreen-bg__video"></video>
+    </div>
+
     <nav>
 
-        <div class="row">
+        <i class="fa fa-bars fa-2x" id="menuButton" aria-hidden="true"></i>
 
-            <a href="index.html"><img src="images/landscapelogo.png" alt="Logo" class="d50"></a>
-
-            <i class="fa fa-bars fa-2x m50" id="menuButton" aria-hidden="true"></i>
-
-            <ul class="d50" id="menu">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>LandScapes</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-            </ul>
-
-        </div>
+        <ul id="menu">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
 
     </nav>
 
     <header>
-
-        <video src="images/Lawn%20Mower%20-%201039.mp4" autoplay loop></video>
 
         <h1>the <br><span><b>L</b>and<b>S</b>capers</span></h1>
 
@@ -70,35 +62,59 @@
         </section>
 
         <section class="res">
+            <!-- The Modal -->
+            <div id="resModal" class="modal">
 
-            <h2>Residential</h2>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                        <h2>Residential</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo voluptate.</p>
+                </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo voluptate.
-                <br>
-                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis minus repellendus ea autem, sint, quod et a quis ad perspiciatis quam aliquid dolor incidunt eligendi sit quae quia voluptatibus.</p>
+            </div>
 
         </section>
 
         <section class="com">
+            <!-- The Modal -->
+            <div id="comModal" class="modal">
 
-            <h2>Commercial</h2>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                        <h2>Commercial</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo voluptate.</p>
+                </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo voluptate.
-                <br>
-                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat perferendis minus repellendus ea autem, sint, quod et a quis ad perspiciatis quam aliquid dolor incidunt eligendi sit quae quia voluptatibus.</p>
+            </div>
 
         </section>
 
         <section class="spec">
+            <!-- The Modal -->
+            <div id="specModal" class="modal">
 
-            <h2>Specialty</h2>
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="modal-header">
+                        <h2>Special</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo voluptate.</p>
+                </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus voluptas nam quaerat eaque qui nostrum dolorem enim natus in cumque autem voluptatibus maiores rerum facere dolorum voluptatem velit incidunt, doloremque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus quos in repudiandae, totam assumenda, doloribus explicabo. Eos expedita, ipsa molestias vero. Error suscipit magnam corporis cumque, quos illo
-                <br>
-                <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni vitae reiciendis, assumenda earum quo veniam fuga nisi hic vero, similique error. Voluptatibus, quo delectus quis architecto neque adipisci quaerat nemo.
-            </p>
+            </div>
 
         </section>
+
+    </main>
+
+    <footer>
 
         <section class="quote">
 
@@ -111,25 +127,6 @@
             </form>
 
         </section>
-
-    </main>
-
-    <footer>
-
-        <ul>
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="#">
-                <li>About</li>
-            </a>
-            <a href="#">
-                <li>LandScapes</li>
-            </a>
-            <a href="#">
-                <li>Contact</li>
-            </a>
-        </ul>
 
         <p>&copy; 2017 theLandScapers.com</p>
 
