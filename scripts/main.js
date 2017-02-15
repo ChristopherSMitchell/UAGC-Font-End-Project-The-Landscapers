@@ -28,11 +28,11 @@ $(document).ready(function () {
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
+    /*window.onclick = function (event) {
         if (event.target == rModal) {
             rModal.style.display = "none";
         }
-    }
+    }*/
 
     // Commercial
     var cModal = document.getElementById('comModal');
@@ -56,7 +56,11 @@ $(document).ready(function () {
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function (event) {
         if (event.target == cModal) {
+            rModal.style.display = "none";
+        } else {
             cModal.style.display = "none";
+        } else {
+            sModal.style.display = "none";
         }
     }
 
@@ -75,16 +79,16 @@ $(document).ready(function () {
     }
 
     // When the user clicks on <span> (x), close the modal
-    sModalSpan.onclick = function () {
+    sSpan.onclick = function () {
         sModal.style.display = "none";
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
+    /*window.onclick = function (event) {
         if (event.target == sModal) {
             sModal.style.display = "none";
         }
-    }
+    }*/
 
 
 });
