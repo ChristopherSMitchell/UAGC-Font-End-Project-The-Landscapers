@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>The LandScapers</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://use.fontawesome.com/70005e22d8.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Martel" rel="stylesheet">
+
+    <link rel="icon" href="images/landscapelogo.png">
+</head>
+
+<body>
+
+    <div class="fullscreen-bg">
+        <video loop muted autoplay src="images/Lawn%20Mower%20-%201039.mp4" class="fullscreen-bg__video"></video>
+    </div>
+
+    <nav>
+
+        <i class="fa fa-bars fa-2x" id="menuButton" aria-hidden="true"></i>
+
+        <ul id="menu">
+            <a href="index.html">
+                <li>Home</li>
+            </a>
+            <a href="about.html">
+                <li>About</li>
+            </a>
+            <a href="contact.html">
+                <li>Contact</li>
+            </a>
+        </ul>
+
+    </nav>
+
+    <header>
+
+        <h1>the <br><span><b>L</b>and<b>S</b>capers</span></h1>
+
+    </header>
+
+    <main class="contact">
+
+        <h1>Contact Us</h1>
+
+        <form action="#">
+
+            <label for="firstName"></label>
+            <input type="text" placeholder="First Name">
+
+            <label for="lastName" required></label>
+            <input type="text" placeholder="Last Name">
+
+            <label for="email" required></label>
+            <input type="email" placeholder="Email">
+
+            <label for="message"></label>
+            <textarea name="message" id="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <section class="quote">
+
+            <form action="">
+
+                <label for="quote">Get your quote today!</label>
+                <input type="email" placeholder="Email" required>
+                <button type="submit">Enter!</button>
+
+            </form>
+
+        </section>
+
+        <p>&copy; 2017 theLandScapers.com</p>
+
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
